@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // rendering components
-import Badge from "./components/Badge";
+import Test from "./components/Test";
 
 const main = document.getElementById("app");
 
-//es importannte pasarle como parametro un elemento (<element />) a reactDom.render
-ReactDOM.render(<Badge />, main); // recibe dos argumentos "que elemento"
-// "donde" tiene que aparecer el elemento
+ReactDOM.render(<Test />, main);
