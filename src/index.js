@@ -4,8 +4,8 @@ import "./styles/index.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // rendering components
-import Test from "./components/Test";
+import Example from "./components/Example";
 
 const main = document.getElementById("app");
 
-ReactDOM.render(<Test />, main);
+ReactDOM.render(<Example />, main);
