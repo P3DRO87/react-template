@@ -1,6 +1,6 @@
 import React from "react";
 
-const example = () => {
+const Example = () => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -12,4 +12,4 @@ const example = () => {
   );
 };
 
-export default example;
+export default Example;
