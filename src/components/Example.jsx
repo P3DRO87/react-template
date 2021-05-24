@@ -12,4 +12,4 @@ const example = () => {
   );
 };
 
-      export default example;
+export default example;
