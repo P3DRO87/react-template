@@ -9,6 +9,10 @@ module.exports = {
     path: path.resolve(__dirname, "bundles"),
   },
 
+  devServer: {
+    historyApiFallback: true,
+  },
+
   module: {
     rules: [
       {
