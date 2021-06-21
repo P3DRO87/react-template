@@ -8,17 +8,22 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "bundles"),
   },
-
-  devServer: {
-    historyApiFallback: true,
-  },
-
   module: {
     rules: [
       {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
+      },
+      {
         test: /\.(js|jsx)$/i,
-        exclude: /nodeModules/,
-        loader: "babel-loader",
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"],
+          },
+        },
       },
       {
         test: /\.css$/i,
