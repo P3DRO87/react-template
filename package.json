@@ -1,7 +1,7 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "React template with boostrap, sass and axios",
+  "description": "React template with react router, boostrap, sass and axios",
   "homepage": ".",
   "scripts": {
     "build": "webpack --mode production",
