@@ -1,7 +1,8 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "React template with React, boostrap, sass and axios",
+  "description": "React template with boostrap, sass and axios",
+  "homepage": ".",
   "scripts": {
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,6 +14,7 @@
     "bootstrap": "^5.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "source-map-loader": "^3.0.0"
   },
   "license": "MIT",
