@@ -1,19 +1,22 @@
-import "bootstrap";
+import * as ReactDOMClient from "react-dom/client";
+import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/index.scss";
 
-const reverseString = (str = "hola mundo") => str.split("").reverse();
+import App from "./App";
 
-const URL = "https://jsonplaceholder.typicode.com/users";
+const container = document.getElementById("app");
 
-const getUsers = async () => {
-   const data = await fetch(URL).then((res) => res.json());
+const root = ReactDOMClient.createRoot(container);
 
-   console.log(data);
+root.render(<App />);
+
+const getHourGlassArrTotal = (hourglassArr) => {
+   return hourglassArr
+      .map((arr, i) => {
+         if (i === 1) return arr[1];
+
+         return arr.reduce((acc, currentVal) => acc + currentVal, 0);
+      })
+      .reduce((acc, currentVal) => acc + currentVal, 0);
 };
-
-(async () => {
-   await getUsers();
-
-   console.log(...reverseString());
-})();

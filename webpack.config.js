@@ -30,7 +30,11 @@ module.exports = (_, { mode }) => ({
             use: {
                loader: "babel-loader",
                options: {
-                  presets: ["@babel/preset-react"],
+                  compact: true,
+                  presets: [
+                     "@babel/preset-env",
+                     ["@babel/preset-react", { runtime: "automatic" }],
+                  ],
                },
             },
          },
